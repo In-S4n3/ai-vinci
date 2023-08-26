@@ -1,7 +1,15 @@
-export default function LandingPage() {
+import { LandingContent } from "@/components/landing-content";
+import { LandingHero } from "@/components/landing-hero";
+import { LandingNavbar } from "@/components/landing-navbar";
+
+const LandingPage = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      Welcome
-    </main>
+    <div className="h-full ">
+      <LandingNavbar />
+      <LandingHero />
+      <LandingContent />
+    </div>
   );
-}
+};
+
+export default LandingPage;
